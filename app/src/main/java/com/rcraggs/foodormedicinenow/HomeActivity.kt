@@ -20,6 +20,7 @@ class HomeActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
+        DataManager.restore(this)
         setLabel()
     }
 
