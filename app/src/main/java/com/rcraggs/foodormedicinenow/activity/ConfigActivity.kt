@@ -1,12 +1,9 @@
-package com.rcraggs.foodormedicinenow
+package com.rcraggs.foodormedicinenow.activity
 
 import android.os.Bundle
-import android.provider.ContactsContract
 import android.support.v7.app.AppCompatActivity
-import android.view.View
-import android.widget.Button
-import com.rcraggs.foodormedicinenow.DataManager.hoursAfter
-import com.rcraggs.foodormedicinenow.DataManager.hoursBefore
+import com.rcraggs.foodormedicinenow.DataManager
+import com.rcraggs.foodormedicinenow.R
 import kotlinx.android.synthetic.main.activity_config.*
 import kotlinx.android.synthetic.main.content_config.*
 
@@ -15,7 +12,7 @@ class ConfigActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_config)
-        setSupportActionBar(toolbar)
+//        setSupportActionBar(toolbar)
 
         // Set the current values in the boxes
         text_hours_before_food.setText("" + DataManager.hoursBefore)

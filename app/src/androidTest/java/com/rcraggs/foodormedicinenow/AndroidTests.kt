@@ -7,6 +7,9 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 import org.junit.Assert.*
+import android.arch.persistence.room.Room
+import kotlin.properties.Delegates
+
 
 /**
  * Instrumented test, which will execute on an Android device.
@@ -14,11 +17,14 @@ import org.junit.Assert.*
  * See [testing documentation](http://d.android.com/tools/testing).
  */
 @RunWith(AndroidJUnit4::class)
-class ExampleInstrumentedTest {
+class AndroidTests {
+
     @Test
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
         assertEquals("com.rcraggs.foodormedicinenow", appContext.packageName)
     }
+
+
 }

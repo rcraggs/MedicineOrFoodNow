@@ -1,12 +1,12 @@
-package com.rcraggs.foodormedicinenow
+package com.rcraggs.foodormedicinenow.activity
 
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.TextView
-import com.rcraggs.foodormedicinenow.R.id.home_label
+import com.rcraggs.foodormedicinenow.DataManager
+import com.rcraggs.foodormedicinenow.R
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.content_home.*
 
@@ -16,6 +16,12 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
         setSupportActionBar(toolbar)
+
+        fab_add_consume.setOnClickListener {
+            val intent = Intent(this, AddActivity::class.java)
+            startActivity(intent)
+            true
+        }
     }
 
     override fun onStart() {
