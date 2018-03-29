@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Food or Medicine Now?</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_config">Set Medicine Details</string>
+    <string name="config_hours_after_food">Hours before eating</string>
+    <string name="config_title">You can take your medicine how many hours...</string>
+    <string name="config_placeholder_after">After Eating</string>
+    <string name="config_placeholder_before">Before Eating</string>
+    <string name="config_save_button">Update</string>
+</resources>
