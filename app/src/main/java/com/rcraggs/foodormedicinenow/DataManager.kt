@@ -9,13 +9,21 @@ object DataManager {
     private var medicine: Medicine = Medicine()
 
     var hoursBefore: Int
-
         get(){
             return medicine.hoursBefore
         }
 
         set(value) {
             medicine.hoursBefore = value
+        }
+
+    var hoursAfter: Int
+        get(){
+            return medicine.hoursAfter
+        }
+
+        set(value) {
+            medicine.hoursAfter = value
         }
 
     fun update(context: Context){
