@@ -9,35 +9,47 @@
 
     <TextView
         android:id="@+id/config_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_width="295dp"
+        android:layout_height="21dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="@string/add_type"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <?xml version="1.0" encoding="utf-8"?>
     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rg_add_type"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <RadioButton android:id="@+id/radio_food"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/config_title">
+        <RadioButton
+            android:id="@+id/radio_food"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/add_type_food"
-            <!--android:onClick="onRadioButtonClicked"-->
-            />
-        <RadioButton android:id="@+id/radio_medicine"
+            android:text="@string/add_type_food" />
+
+        <RadioButton
+            android:id="@+id/radio_medicine"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/add_type_medicine"
-            <!--android:onClick="onRadioButtonClicked"-->
-            />
+            android:drawablePadding="16dp"
+            android:text="@string/add_type_medicine" />
     </RadioGroup>
 
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/add_button_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_add_type" />
 
 </android.support.constraint.ConstraintLayout>

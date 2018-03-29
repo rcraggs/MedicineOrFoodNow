@@ -12,7 +12,6 @@ class ConfigActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_config)
-//        setSupportActionBar(toolbar)
 
         // Set the current values in the boxes
         text_hours_before_food.setText("" + DataManager.hoursBefore)
