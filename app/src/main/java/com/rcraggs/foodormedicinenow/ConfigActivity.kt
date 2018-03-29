@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.TextView
 
 import kotlinx.android.synthetic.main.activity_config.*
+import kotlinx.android.synthetic.main.content_config.*
 
 class ConfigActivity : AppCompatActivity() {
 
@@ -27,12 +28,6 @@ class ConfigActivity : AppCompatActivity() {
     }
 
     fun saveSettings() {
-        val beforeText = findViewById<TextView>(R.id.text_hours_before_food)
-        val prefs = this.getSharedPreferences(Constants.PREFS, 0)
-
-        with(prefs.edit()) {
-            putInt(Constants.HOURS_BEFORE, Integer.parseInt(beforeText.text.toString()))
-            prefs.edit().apply()
-        }
+        DataManager.hoursBefore = Integer.parseInt(text_hours_before_food.text.toString())
     }
 }
